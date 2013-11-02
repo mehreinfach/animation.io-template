@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!--
+
+Animation.io, an interactive and extendable animation framework
+
+official website: http://animation.io
+support group: http://group.animation.io
+open source code: https://github.com/mehreinfach/animation.io
+a project by Mehreinfach: http://mehreinfach.de
+
+-->
+
+<html>
+<head>
+	<title>Scaffold Animation</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="viewport" content="width=device-width,user-scalable=no">
+
+	<meta name="description" content="Interaktive Animation">
+	<meta name="google-site-verification" content="1QOE4XlZHsSSswIFmwYmTAILejsRJQbxA07d0RBh6XI" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+	<script type="text/javascript" src="//use.typekit.net/jph2omb.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+	<link rel="stylesheet" type="text/css" href="animationframework/css/core.css" charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/custom.css" charset="utf-8">
+
+	<script src="customscripts/exitmessage.js"></script>
+
+	
+	<script src="http://sync.animation.io/engine/animation.js"></script>
+  <!-- your custom scripts -->
+  <script src="customscripts/meta.js"></script>
+  <script src="customscripts/quiz_data.js"></script>
+  <script src="customscripts/loader.js"></script>
+
+	<!-- your scenes: -->
+	<script src="scenes/scene0.js"></script>
+	<script src="scenes/scene1.js"></script>
+	<script src="scenes/scene2.js"></script>
+	<script src="scenes/scene3.js"></script>
+	<script src="scenes/scene4.js"></script>
+	<script src="scenes/scene5.js"></script>
+
+</head>
+
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" oncontextmenu="return false;">
+
+	<!-- <h1 href="/accessible/index.html" id="accessible">Barrierefreie Version: wählen Sie dieses Link, um diese Seite im Reader zu lesen</h1> -->
+
+	<div id="background"></div>
+
+	<div id="preload" style="display: none;">
+		<!-- preload files for scene0:
+
+				loader-images: -->
+		<img src="images/bilder/gesichter/ML_00.png">
+		<img src="images/bilder/gesichter/ML_10.png">
+		<img src="images/bilder/gesichter/ML_20.png">
+		<img src="images/bilder/gesichter/ML_30.png">
+		<img src="images/bilder/gesichter/ML_40.png">
+		<img src="images/bilder/gesichter/ML_50.png">
+		<img src="images/bilder/gesichter/ML_60.png">
+		<img src="images/bilder/gesichter/ML_70.png">
+		<img src="images/bilder/gesichter/ML_80.png">
+		<img src="images/bilder/gesichter/ML_90.png">
+		<!-- <img src="images/logo.jpg"> -->
+	</div> 
+	
+
+	</div>
+
+	<div id="animframe" style="width: 1024px; height: 768px !important; margin: 65px auto;"></div>
+
+
+	<div id="fallback" class="fallback" style="display:none;">
+		<div class="inner">
+			<h1>Bitte Browser updaten!</h1>
+			<p>
+				Diese Animation erfordert einen modernen Browser mit aktiviertem JavaScript.
+				Sie könnten zum Beispiel einen der folgenden Browser installieren:
+			</p>
+			<p>
+				<a href="www.google.com/chrome/‎" target="_blank">Chrome</a>
+				<a href="http://www.mozilla.org/de-DE/firefox" target="_blank">Firefox</a>
+				<br />
+				<a href="http://windows.microsoft.com/de-de/internet-explorer/download-ie" target="_blank">Internet Explorer (ab Version 9)</a>
+				<a href="http://www.apple.com/de/safari/" target="_blank">Safari (für Apple)</a>
+			</p>
+			<p>
+				Wenn Sie bereits einen dieser Browser installiert haben, stellen Sie bitte sicher, dass Sie die neueste Version verwenden.
+			</p>
+		</div>
+	</div>
+
+	<noscript>
+		<div id="noscript" class="fallback">
+			<div class="inner">
+				<h1>Bitte JavaScript anschalten!</h1>
+				<p>
+					Dies ist eine interaktive Animation, die mit HTML5 und 
+					JavaScript realisiert ist. Im Moment ist JavaScript in Deinem 
+					Browser ausgeschaltet. Bitte wende Dich an Deine Eltern,
+					damit Sie Dir weiterhelfen. 
+				</p>
+			</div>
+		</div>
+	</noscript>
+
+	<script>
+		loadAnimationInto('Scaffold Animation', 'animframe', 'scene0', 1024, 768);
+		// loadAnimationInto('Animation Framework', 'animframe', 'scene0', 800, 600);
+		// developermode = true;
+	
+		// Google Analytics
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-44470720-1', 'merlantis.de');
+	  ga('send', 'pageview');
+  	ga('set', 'anonymizeIP', true);
+
+	</script>
+</body>
+</html>

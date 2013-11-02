@@ -1,0 +1,184 @@
+/* =========================================================== */
+/* TEXT STYLING */
+.text, .hastext {
+  font-size: 20px;
+  line-height: 30px;
+  font-family: "sf_cartoonist_handregular", Helvetica, Arial, "Nimbus Sans L", "Liberation Sans", sans-serif;
+  display: block;
+  padding: 5px 15px;
+  margin: -5px -15px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px; }
+  .text.title, .hastext.title {
+    font-family: "sf_cartoonist_handbold";
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 30px; }
+  .text.text_auf_titelseite, .hastext.text_auf_titelseite {
+    width: 600px; }
+  .text.grey, .text .grey, .hastext.grey, .hastext .grey {
+    color: #aaa; }
+  .text.black, .text .black, .hastext.black, .hastext .black {
+    color: #000; }
+  .text.small, .text .small, .hastext.small, .hastext .small {
+    font-size: 18px;
+    line-height: 24px; }
+  .text p, .hastext p {
+    padding: 0;
+    margin: 20px 0; }
+  .text.center, .text .center, .hastext.center, .hastext .center {
+    text-align: center; }
+  .text a, .hastext a {
+    color: #33e;
+    text-decoration: none; }
+
+/* =========================================================== */
+/* FALLBACK */
+.fallback {
+  position: absolute;
+  top: 0;
+  width: 100%; }
+  .fallback .inner {
+    text-align: center;
+    width: 1190px;
+    z-index: 100;
+    color: #eee;
+    margin: 170px auto;
+    font: 21px/28px "sf_cartoonist_handregular", sans-serif; }
+    .fallback .inner h1, .fallback .inner p {
+      width: 570px;
+      margin: 0 auto 34px; }
+    .fallback .inner a {
+      padding: 3px 7px;
+      color: #fff;
+      cursor: pointer !important;
+      pointer-events: auto; }
+
+/* =========================================================== */
+/* COUNTER & TEXT IN SCENE 17 */
+.counter {
+  padding-top: 20px;
+  width: 240px;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 20px; }
+
+.hastext {
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 20px; }
+  .hastext .inner {
+    margin: 25px 5px;
+    font-size: 16px;
+    line-height: 22px;
+    font-family: sans-serif; }
+  .hastext.weiter .inner {
+    color: red;
+    margin-top: 16px;
+    font-size: 27px;
+    line-height: 27px;
+    font-family: "sf_cartoonist_handregular", Helvetica, Arial, "Nimbus Sans L", "Liberation Sans", sans-serif; }
+
+body {
+  /* the page itself */
+  background-color: #a6d6ec;
+  background-repeat: no-repeat;
+  background-position: center 80px;
+  padding: 0;
+  margin: 0;
+  min-width: 1190px; }
+
+/* ======================================== */
+table {
+  font-size: 0;
+  line-height: 0;
+  border: 0; }
+  table img {
+    position: inline-block; }
+
+#stage {
+  position: absolute; }
+  #stage .quiz {
+    text-align: left;
+    padding: 0;
+    margin: 0; }
+    #stage .quiz.answer {
+      padding-left: 55px;
+      background-position: top left;
+      background-repeat: no-repeat no-repeat; }
+    #stage .quiz.answer0 {
+      background-image: url(/images/quiz/a.png); }
+    #stage .quiz.answer1 {
+      background-image: url(/images/quiz/b.png); }
+    #stage .quiz.answer2 {
+      background-image: url(/images/quiz/c.png); }
+    #stage .quiz .inner {
+      text-align: left;
+      font-family: "sf_cartoonist_handregular", serif !important;
+      font-size: 22px;
+      line-height: 27px;
+      color: #2d1c13;
+      padding: 0;
+      margin: 0; }
+    #stage .quiz.title .inner {
+      font-size: 30px;
+      line-height: 40px;
+      font-family: "sf_cartoonist_handbold";
+      font-weight: bold; }
+    #stage .quiz.question .inner {
+      font-size: 25px;
+      line-height: 32px;
+      font-weight: bold; }
+    #stage .quiz.explanation {
+      width: 405px; }
+      #stage .quiz.explanation .inner {
+        width: 355px;
+        overflow: hidden;
+        text-align: center;
+        margin-top: 150px;
+        margin-left: 45px; }
+    #stage .quiz.results {
+      font-size: 22px;
+      line-height: 26px; }
+  #stage .loader .inner {
+    margin: none;
+    position: absolute;
+    top: 160px;
+    left: 250px;
+    width: 200px; }
+  #stage .loader .percentage {
+    position: absolute; }
+
+#rahmen_wrapper {
+  position: absolute;
+  clear: both;
+  top: 0;
+  width: 100%;
+  min-width: 1200px;
+  height: 700px;
+  pointer-events: none; }
+  #rahmen_wrapper #rahmen {
+    position: relative;
+    margin: 37px auto 10px;
+    width: 1005px;
+    margin-left: auto;
+    margin-right: auto; }
+    #rahmen_wrapper #rahmen .rahmen_oben {
+      position: absolute;
+      top: 0;
+      left: 0;
+      position: relative;
+      z-index: 50; }
+    #rahmen_wrapper #rahmen .rahmen_rechts {
+      position: absolute;
+      top: 40px;
+      right: 0; }
+    #rahmen_wrapper #rahmen .rahmen_links {
+      position: absolute;
+      top: 40px;
+      left: 0; }
+    #rahmen_wrapper #rahmen .rahmen_unten {
+      position: absolute;
+      top: 667px;
+      left: 0; }
