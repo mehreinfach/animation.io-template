@@ -1,44 +1,46 @@
-Animation.prototype.showLoader = function(){
-    // loader-divs (wrapper/inner)
-    this.loader = document.createElement('div');
-    this.loader.setAttribute('class', 'loader');
-    this.loader.inner = document.createElement('div');
-    this.loader.inner.setAttribute('class', 'inner');
-    this.loader.appendChild(this.loader.inner);
+// Animation.prototype.showLoader = function(){
+//   console.log("showing loader");
 
-    // display the image
-    this.loader.loadimage = document.createElement('img');
-    this.loader.loadimage.setAttribute('src', 'images/bilder/gesichter/ML_00.png');
-    this.loader.loadimage.setAttribute('class', 'percentage');
+//   // loader-divs (wrapper/inner)
+//   this.loader = document.createElement('div');
+//   this.loader.setAttribute('class', 'loader');
+//   this.loader.inner = document.createElement('div');
+//   this.loader.inner.setAttribute('class', 'inner');
+//   this.loader.appendChild(this.loader.inner);
 
-    var logo = document.createElement('img');
-    logo.setAttribute('src', 'images/logo.jpg');
+//   // display the image
+//   this.loader.loadimage = document.createElement('img');
+//   this.loader.loadimage.setAttribute('src', 'images/bilder/gesichter/ML_00.png');
+//   this.loader.loadimage.setAttribute('class', 'percentage');
 
-    // add everything to the loader-div
-    this.loader.inner.appendChild(logo);
-    this.loader.inner.appendChild(this.loader.loadimage);
+//   var logo = document.createElement('img');
+//   logo.setAttribute('src', 'images/logo.jpg');
 
-    window.animation.stageDiv.appendChild(this.loader);
-  };
+//   // add everything to the loader-div
+//   this.loader.inner.appendChild(logo);
+//   this.loader.inner.appendChild(this.loader.loadimage);
 
-        Animation.prototype.updateLoader = function(percentage){
-                // this.loader.loadtext.innerHTML = percentage;
+//   window.animation.stageDiv.appendChild(this.loader);
+// };
 
-    // round to nearest 10 (so we need only 10 images):
-    percentage = Math.round(percentage/10) * 10;
+// Animation.prototype.updateLoader = function(percentage){
+//               // this.loader.loadtext.innerHTML = percentage;
 
-    // never round up to 100%
-    if (percentage == 100) percentage = 90;
+//   // round to nearest 10 (so we need only 10 images):
+//   percentage = Math.round(percentage/10) * 10;
 
-    // double digits:
-    percentage = percentage < 10 ? '0' + percentage : percentage;
+//   // never round up to 100%
+//   if (percentage == 100) percentage = 90;
 
-    // pick the right image
-    this.loader.loadimage.setAttribute('src', 'images/bilder/gesichter/ML_' + percentage + '.png');
-        };
+//   // double digits:
+//   percentage = percentage < 10 ? '0' + percentage : percentage;
 
-        Animation.prototype.hideLoader = function(){
-                try{
-                        window.animation.stageDiv.removeChild(this.loader);
-                }catch(e){}
-        };
+//   // pick the right image
+//   this.loader.loadimage.setAttribute('src', 'images/bilder/gesichter/ML_' + percentage + '.png');
+// };
+
+// Animation.prototype.hideLoader = function(){
+//   try{
+//           window.animation.stageDiv.removeChild(this.loader);
+//   }catch(e){}
+// };

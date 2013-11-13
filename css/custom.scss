@@ -211,24 +211,6 @@ table {
       line-height: 26px;
     }
   }
-  
-  .loader {
-    .inner {
-      margin: none;
-      position: absolute;
-      // border: none;
-      top: 160px;
-      left: 250px;
-      // text-align: center;
-      width: 200px;
-      // right: 219px;
-    }
-    .percentage {
-      position: absolute;
-      // right: 37px;
-      // top: 49px;
-    }
-  }
 }
 
 #rahmen_wrapper {
@@ -271,10 +253,3 @@ table {
     }
   }
 }
-
-#zauberpressediv {
-  width: 100%;
-  position: absolute;
-  top: 43px;
-}
-

@@ -141,14 +141,6 @@ table {
     #stage .quiz.results {
       font-size: 22px;
       line-height: 26px; }
-  #stage .loader .inner {
-    margin: none;
-    position: absolute;
-    top: 160px;
-    left: 250px;
-    width: 200px; }
-  #stage .loader .percentage {
-    position: absolute; }
 
 #rahmen_wrapper {
   position: absolute;
