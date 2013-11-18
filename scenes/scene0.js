@@ -15,6 +15,7 @@ var scene0 = function () {
   var bg_hinten = scene.createActor('szene0/bg0.jpg', 0, 0, 1024, 768).isInLayer(0);
 
   var gesicht = scene.createActor('bilder/mann.png', 100, 100).isInLayer(0);
+  gesicht.setText("Text auf Kopf");
   
   return scene;
 };

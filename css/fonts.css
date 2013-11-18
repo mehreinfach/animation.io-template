@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'after_shokregular';
+  src: url('../fonts/aftershok_regular_macroman/After_Shok-webfont.eot');
+  src: url('../fonts/aftershok_regular_macroman/After_Shok-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/aftershok_regular_macroman/After_Shok-webfont.woff') format('woff'),
+       url('../fonts/aftershok_regular_macroman/After_Shok-webfont.ttf') format('truetype'),
+       url('../fonts/aftershok_regular_macroman/After_Shok-webfont.svg#after_shokregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
