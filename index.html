@@ -17,21 +17,16 @@ Animation.io, an interactive and extendable animation framework
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 
 	<link rel="stylesheet" type="text/css" href="http://animation.io/engine/css/core.css" charset="utf-8">
-
-	<link rel="stylesheet" type="text/css" href="css/fonts.css">
 	<link rel="stylesheet" type="text/css" href="css/custom.css" charset="utf-8">
 
-
+	<!-- Animation.io Server (loads) -->
 	<script src="http://animation.io/engine/animation.js"></script>
 
+	<!-- Your custom scripts -->
 	<script src="scripts/exitmessage.js"></script>
-	
 	<script src="scripts/loader.js"></script>
 
-  <!-- your custom scripts -->
-  <script src="scripts/loader.js"></script>
-
-	<!-- your scenes: -->
+	<!-- Your scenes -->
 	<script src="scenes/scene0.js"></script>
 	<script src="scenes/scene1.js"></script>
 	<script src="scenes/scene2.js"></script>
@@ -43,15 +38,10 @@ Animation.io, an interactive and extendable animation framework
 
 <body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" oncontextmenu="return false;">
 
-	<div id="background"></div>
-
 	<div id="preload" style="display: none;">
 	</div> 
 
-	</div>
-
-	<div id="animframe" style="width: 1024px; height: 768px !important; margin: 65px auto;"></div>
-
+	<div id="animframe"></div>
 
 	<div id="fallback" class="fallback" style="display:none;">
 		<div class="inner">
@@ -75,6 +65,7 @@ Animation.io, an interactive and extendable animation framework
 
 	<script>
 		loadAnimationInto('Scaffold Animation', 'animframe', 'scene0', 1024, 768);
+		// AnimationIO.load({'firstScene': 'scene0', 'div': 'animframe', 'width': 1024, 'height': 768});
 	</script>
 
 	<noscript>
@@ -89,7 +80,6 @@ Animation.io, an interactive and extendable animation framework
 			</div>
 		</div>
 	</noscript>
-
 
 </body>
 </html>

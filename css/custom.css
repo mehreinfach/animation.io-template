@@ -1,28 +1,44 @@
+/*
+  Animation.io Styling
+  Anything in this file can be changed without crashing the animation…
+  unless you overwrite stuff defined in core.css.
+*/
+
 /* =========================================================== */
+
 /* PAGE BACKGROUND, SIZE */
+
 body {
   /* the page itself */
   background-color: #a6d6ec;
   padding: 0;
   margin: 0;
-  min-width: 1190px; }
+}
 
-/* =========================================================== */
+#animframe {
+  width: 1024px;
+  margin: 40px auto;
+}
+
 /* TEXT STYLING */
+
 .text, .hastext {
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 25px;
+  line-height: 35px;
   display: block;
   padding: 5px 15px;
   margin: -5px -15px;
   background: rgba(255, 255, 255, 0.4);
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
-  border-radius: 5px; }
+  border-radius: 5px;
+}
   
-  .hastext .inner {
-    font-family: "after_shokregular", Helvetica, Arial, sans-serif;
-  }
+.hastext .inner {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  color: white;
+}
 
 /* =========================================================== */
 /* FALLBACK */
